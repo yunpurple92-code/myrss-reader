@@ -1,0 +1,27 @@
+# ============================================
+# osmosfeed 配置文件
+# 部署步骤：
+# 1. 在 GitHub 创建公开仓库，如 "rss-reader"
+# 2. 将此文件放到仓库根目录
+# 3. 修改 cacheUrl 中的用户名和仓库名
+# 4. 启用 GitHub Pages（Settings → Pages → Source: gh-pages）
+# 5. GitHub Actions 会自动构建，站点发布在：
+#    https://purpleyun92-code.github.io/myrss-reader
+# ============================================
+
+siteTitle: "RSS 阅读"
+cacheUrl: https://purpleyun92-code.github.io/rss-reader/cache.json
+timezone: Asia/Shanghai
+
+# 将 cacheUrl 中的 YOUR_USERNAME 替换为你的 GitHub 用户名
+# 将 rss-reader 替换为你的仓库名
+
+sources:
+  # ---- 在这里添加你的 RSS 订阅源 ----
+  # 格式：- href: https://xxx.com/feed.xml
+  #
+  # 示例（取消注释即可使用）：
+   - href: https://aihot.virxact.com/feed.xml
+   - href: https://aihot.virxact.com/feed/all.xml
+   - href: https://aihot.virxact.com/feed/daily.xml
+  #- href: https://hnrss.org/frontpage
